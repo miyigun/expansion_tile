@@ -17,6 +17,7 @@ class _HomeState extends State<Home> {
         title: Text(widget.title),
       ),
       body: ExpansionTile(
+        leading: const Icon(Icons.flag),
         title: const Text(
             "Sports",
           style: TextStyle(
@@ -24,16 +25,18 @@ class _HomeState extends State<Home> {
             fontWeight: FontWeight.bold
           ),
         ),
-        children: const [
+        children: [
           ListTile(
-              title: Text(
+            leading: Image.asset("assets/chess.png"),
+              title: const Text(
                   "Chess",
                 style: TextStyle(
                     color: Colors.blue,
                 ),
               ),
           ),
-          ListTile(
+          const ListTile(
+            leading: Icon(Icons.sports_basketball),
             title: Text(
               "Basketball",
               style: TextStyle(
@@ -41,7 +44,8 @@ class _HomeState extends State<Home> {
               ),
             ),
           ),
-          ListTile(
+          const ListTile(
+            leading: Icon(Icons.sports_football),
             title: Text(
               "Football",
               style: TextStyle(
@@ -49,7 +53,8 @@ class _HomeState extends State<Home> {
               ),
             ),
           ),
-          ListTile(
+          const ListTile(
+            leading: Icon(Icons.sports_volleyball),
             title: Text(
               "Voleyball",
               style: TextStyle(
